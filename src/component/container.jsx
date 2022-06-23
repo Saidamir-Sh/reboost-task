@@ -22,10 +22,17 @@ function ContainerBox() {
     useEffect(() => {
         fetchData()
      } , [])
+
   return (
     <Container>
         <Row>
-
+            {
+                boxProps.map((boxProp) => (
+                    <Col className="m-1 d-flex justify-center" key={boxProp.text} style={{backgroundColor: boxProp.color}}>
+                        <p className='text-white text-center'>{boxProp.text}</p>
+                    </Col>
+                ))
+            }
         </Row>
     </Container>
   )
