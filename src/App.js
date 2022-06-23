@@ -1,3 +1,4 @@
+import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ContainerBox from './component/container';
 

@@ -28,7 +28,7 @@ function ContainerBox() {
         <Row>
             {
                 boxProps.map((boxProp) => (
-                    <Col className="m-1 d-flex justify-center" key={boxProp.text} style={{backgroundColor: boxProp.color}}>
+                    <Col xs={12} sm={6} md={4} lg={2} className="d-flex justify-content-center align-items-center" key={boxProp.text} style={{backgroundColor: boxProp.color, height: '20vh'}}>
                         <p className='text-white text-center'>{boxProp.text}</p>
                     </Col>
                 ))
